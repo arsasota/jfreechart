@@ -128,7 +128,7 @@ public abstract class ChartUtils {
      * @throws IOException if there are any I/O errors.
      */
     public static void writeChartAsPNG(OutputStream out, JFreeChart chart,
-            double width, double height) throws IOException {
+            int width, int height) throws IOException {
 
         // defer argument checking...
         writeChartAsPNG(out, chart, width, height, null);
@@ -148,7 +148,7 @@ public abstract class ChartUtils {
      * @throws IOException if there are any I/O errors.
      */
     public static void writeChartAsPNG(OutputStream out, JFreeChart chart,
-            double width, double height, boolean encodeAlpha, int compression)
+            int width, int height, boolean encodeAlpha, int compression)
             throws IOException {
 
         // defer argument checking...
@@ -172,7 +172,7 @@ public abstract class ChartUtils {
      * @throws IOException if there are any I/O errors.
      */
     public static void writeChartAsPNG(OutputStream out, JFreeChart chart,
-            double width, double height,  ChartRenderingInfo info)
+            int width, int height,  ChartRenderingInfo info)
             throws IOException {
 
         Args.nullNotPermitted(chart, "chart");
@@ -199,7 +199,7 @@ public abstract class ChartUtils {
      * @throws IOException if there are any I/O errors.
      */
     public static void writeChartAsPNG(OutputStream out, JFreeChart chart,
-            double width, double height, ChartRenderingInfo info,
+            int width, int height, ChartRenderingInfo info,
             boolean encodeAlpha, int compression) throws IOException {
 
         Args.nullNotPermitted(out, "out");
