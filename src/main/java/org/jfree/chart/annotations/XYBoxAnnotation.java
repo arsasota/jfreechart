@@ -286,16 +286,16 @@ public class XYBoxAnnotation extends AbstractXYAnnotation
             return false;
         }
         XYBoxAnnotation that = (XYBoxAnnotation) obj;
-        if (!(this.x0 == that.x0)) {
+        if (this.x0 != that.x0) {
             return false;
         }
-        if (!(this.y0 == that.y0)) {
+        if (this.y0 != that.y0) {
             return false;
         }
-        if (!(this.x1 == that.x1)) {
+        if (this.x1 != that.x1) {
             return false;
         }
-        if (!(this.y1 == that.y1)) {
+        if (this.y1 != that.y1) {
             return false;
         }
         if (!Objects.equals(this.stroke, that.stroke)) {
