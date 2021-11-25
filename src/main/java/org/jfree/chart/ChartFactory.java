@@ -300,7 +300,7 @@ public abstract class ChartFactory {
             boolean greenForIncrease, boolean legend, boolean tooltips,
             Locale locale, boolean subTitle, boolean showDifference) {
 
-        PiePlot <string> plot = new PiePlot(dataset);
+        PiePlot plot = new PiePlot(dataset);
         plot.setLabelGenerator(new StandardPieSectionLabelGenerator(locale));
         plot.setInsets(new RectangleInsets(0.0, 5.0, 5.0, 5.0));
 
