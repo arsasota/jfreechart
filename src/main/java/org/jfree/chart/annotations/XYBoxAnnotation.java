@@ -286,7 +286,7 @@ public class XYBoxAnnotation extends AbstractXYAnnotation
             return false;
         }
         XYBoxAnnotation that = (XYBoxAnnotation) obj;
-        if (this.x0 != that.x0)  {
+        if (!(this.x0 == that.x0))  {
             return false;
         }
         if (!(this.y0 == that.y0))  {
