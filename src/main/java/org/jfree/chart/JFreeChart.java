@@ -976,8 +976,8 @@ public class JFreeChart implements Drawable, TitleChangeListener,
     public void receive(ChartElementVisitor visitor) {
         this.title.receive(visitor);
         this.subtitles.forEach(subtitle ->
-            subtitle.receive(visitor)
-        }
+            subtitle.receive(visitor);
+        });
         this.plot.receive(visitor);
         visitor.visit(this);
     }
