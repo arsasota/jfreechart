@@ -999,7 +999,7 @@ public class ThermometerPlot extends Plot implements ValueAxisPlot,
         this.padding.trim(interior);
         int midX = (int) (interior.getX() + (interior.getWidth() / 2));
         int midY = (int) (interior.getY() + (interior.getHeight() / 2));
-        double stemTop = (double) (interior.getMinY() + getBulbRadius());
+        int stemTop = (int) (interior.getMinY() + getBulbRadius());
         int stemBottom = (int) (interior.getMaxY() - getBulbDiameter());
         Rectangle2D dataArea = new Rectangle2D.Double(midX - getColumnRadius(),
                 stemTop, getColumnRadius(), stemBottom - stemTop);
